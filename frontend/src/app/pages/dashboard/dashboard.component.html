@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="saludo-box">
+    <div class="saludo">
+      <p>¡Hola {{ cuentas[0].nombre_cliente }}!</p>
+    </div>
+    <div class="fecha-hora">
+      <p>{{ fechaActual | date: 'dd/MM/yyyy' }}</p>
+      <p>{{ fechaActual | date: 'HH:mm:ss' }}</p>
+    </div>
+  </div>
+
+  <div class="content-container">
+    <div class="mis-cuentas">
+      <h2>Mis cuentas</h2>
+    </div>
+
+    <div class="cuentas-container">
+      @for (datum of cuentas; track datum.id_cuenta) {
+        <div class="cuenta">
+          <p>Cuenta No. {{ datum.numero_cuenta }}</p>
+          <p>{{ datum.ciudad }}</p>
+          <p><span class="symbol">$</span>{{ datum.saldo }}</p>
+          <p>Valor pendiente</p>
+        </div>
+      } @empty {
+        <p>No hay datos</p>
+      }
+    </div>
+  </div>
+</div>

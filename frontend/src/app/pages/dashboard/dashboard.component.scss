@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+.saludo-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+  .saludo {
+    flex: 1;
+    color: purple;
+  }
+
+  .fecha-hora {
+    text-align: right;
+  }
+}
+
+.content-container {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 10px;
+  margin-top: 20px; // Agregamos margen superior
+}
+
+.mis-cuentas {
+  border: 1px solid cornflowerblue;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.cuentas-container {
+  border: 1px solid grey;
+  border-radius: 10px; // Bordes redondeados
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra
+  display: flex;
+  flex-wrap: wrap; // Permite que las cuentas se envuelvan a la siguiente línea si no hay espacio suficiente
+  justify-content: space-between; // Ajusta el espacio entre las cuentas
+}
+
+.cuenta {
+  border: 1px solid grey;
+  border-radius: 10px; // Bordes redondeados
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra
+  border-top: 5px solid purple;
+  padding: 15px; // Ajuste de espaciado
+  margin-bottom: 20px;
+  width: 250px;
+
+  background-color: white; // Fondo blanco
+  margin-left: 10px; // Márgenes izquierdos
+  margin-right: 10px; // Márgenes derechos
+  margin-top: 10px; // Márgenes superiores
+  margin-bottom: 10px; // Márgenes inferiores
+}
+
+.cuenta p {
+  margin: 0;
+}
+
+.symbol {
+  color: purple; // Color morado
+  font-size: 1.5em; // Ajuste de tamaño del símbolo
+  margin-right: 5px; // Espaciado entre el símbolo y el valor
+}
